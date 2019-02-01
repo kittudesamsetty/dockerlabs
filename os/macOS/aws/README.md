@@ -1,9 +1,31 @@
 
-# Kubernetes Cluster on AWS using Kops running on Docker for Mac
+# Manage Your Kubernetes Cluster on AWS using Kops running on Docker Desktop for MacOS
 
-Pre-requisites:
+Kops refers to Kubernetes Operations. It is a set of tools for installing, operating, and deleting Kubernetes clusters in the cloud. A rolling upgrade of an older version of Kubernetes to a new version can also be performed. It also manages the cluster add-ons. After the cluster is created, the usual kubectl CLI can be used to manage resources in the cluster.
 
-- Docker for Mac 17.12+
+Under this tutorial, I will showcase how Kubernetes Cluster can be deployed and Managed using Kops via Docker Desktop for Mac.
+
+## Tested Infrastructure
+
+<table class="tg">
+  <tr>
+    <th class="tg-yw4l"><b>Platform</b></th>
+    <th class="tg-yw4l"><b>Number of Instance</b></th>
+    <th class="tg-yw4l"><b>Reading Time</b></th>
+    
+  </tr>
+  <tr>
+    <td class="tg-yw4l"><b> Docker Desktop for MacOS </b></td>
+    <td class="tg-yw4l"><b>1</b></td>
+    <td class="tg-yw4l"><b>5 min</b></td>
+    
+  </tr>
+  
+</table>
+
+## Pre-requisites:
+
+- Docker Desktop for Mac 
 - Install AWS CLI using ```brew install aws```
 - Create an AWS Account if you are first time user.
 - Run the below command to install kops on your macOS:
@@ -137,7 +159,12 @@ Changes may require instances to restart: kops rolling-update cluster
 
 Now you can see K8s cluster under Context UI.
 
-![My image](https://github.com/ajeetraina/docker101/blob/master/for-mac/aws/context-aws.png)
+![My image](https://github.com/collabnix/dockerlabs/blob/master/os/macOS/aws/context-aws.png)
+
+
+## Contributor
+
+[Ajeet S Raina](ajeetraina@gmail.com)
 
 
 
