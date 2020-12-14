@@ -1,30 +1,35 @@
+---
+layout: default
+title: Beginners Track - Difference between VM vs Docker 
+description: collabnix | DockerLab | Docker - Beginners Track
+---
 # Difference between VM vs Docker
 
 Let us understand this with a simple analogy. 
 
 Virtual machines have a full OS with its own memory management installed with the associated overhead of virtual device drivers. In a virtual machine, valuable resources are emulated for the guest OS and hypervisor, which makes it possible to run many instances of one or more operating systems in parallel on a single machine (or host). Every guest OS runs as an individual entity from the host system. Hence, we can look at it an independent full-fledge house where we don't share any resources as shown below:
 
-![My Image](https://github.com/collabnix/dockerlabs/blob/master/beginners/docker/images/vm-docker1.png)
+![My Image](https://raw.githubusercontent.com/collabnix/dockerlabs/master/beginners/docker/images/vm-docker1.png)
 
 In the other hand, Docker containers are executed with the Docker engine rather than the hypervisor. Containers are therefore smaller than Virtual Machines and enable faster start up with better performance, less isolation and greater compatibility possible due to sharing of the host’s kernel. Hence, it looks very similar to residental flats system where we share resources of the building.
 
-![My Image](https://github.com/collabnix/dockerlabs/blob/master/beginners/docker/images/vm-docker2.png)
+![My Image](https://raw.githubusercontent.com/collabnix/dockerlabs/master/beginners/docker/images/vm-docker2.png)
 
 
 
-![My Image](https://github.com/collabnix/dockerlabs/blob/master/beginners/docker/images/vm-docker3.png)
+![My Image](https://raw.githubusercontent.com/collabnix/dockerlabs/master/beginners/docker/images/vm-docker3.png)
 
  
 ## Docker Containers versus Virtual Machines:
 
-![My Image](https://github.com/collabnix/dockerlabs/blob/master/beginners/docker/images/vm-docker4.png)
+![My Image](https://raw.githubusercontent.com/collabnix/dockerlabs/master/beginners/docker/images/vm-docker4.png)
  
 When it comes to comparing the two, it could be said that Docker Containers have much more potential than Virtual Machines. It’s evident as Docker Containers are able to share a single kernel and share application libraries. Containers present a lower system overhead than Virtual Machines and performance of the application inside a container is generally same or better as compared to the same application running within a Virtual Machine.
 
  
 There is one key metric where Docker Containers are weaker than Virtual Machines, and that’s “Isolation”. Intel’s VT-d and VT- x technologies have provided Virtual Machines with ring-1 hardware isolation of which, it takes full advantage. It helps Virtual Machines from breaking down and interfering with each other. Docker Containers yet don’t have any hardware isolation, thus making them receptive to exploits.
 
-![My Image](https://github.com/collabnix/dockerlabs/blob/master/beginners/docker/images/vm-docker5.png)
+![My Image](https://raw.githubusercontent.com/collabnix/dockerlabs/master/beginners/docker/images/vm-docker5.png)
 
  
 As compared to virtual machines, containers can be faster and less resource heavy as long as the user is willing to stick to a single platform to provide the shared OS. A virtual machine could take up several minutes to create and launch whereas a container can be created and launched just in a few seconds. Applications contained in containers offer superior performance, compared to running the application within a virtual machine.
@@ -62,4 +67,4 @@ Apples to apples comparison: On a physical host with a certain configuration and
  
 Answer to this question so far cannot be ascertained but depending upon their configurations and constraints one could say that containers are overcoming virtual machines. Application design is the one standpoint suggesting which one of the two should be chosen. If application is designed to provide scalability and high availability then containers are the best choice else application can be placed in a virtual machine, though Docker containers have surely challenged  virtualization market with containers. Well, keeping the debate aside, it is easy to say that containers in Virtual Machines are twice as robust as one without the other.
 
-[Proceed >> Similarity between Docker & Virtual Machine](https://github.com/collabnix/dockerlabs/blob/master/beginners/similarity-vm-docker.md)
+[Proceed >> Similarity between Docker & Virtual Machine](https://collabnix.github.io/dockerlabs/beginners/similarity-vm-docker.html)

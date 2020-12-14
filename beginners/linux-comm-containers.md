@@ -1,3 +1,9 @@
+---
+layout: default
+title: Beginners Track - Can container communication cross over to noncontainerized apps?
+description: collabnix | DockerLab | Docker - Beginners Track
+---
+
 # Can container communication cross over to noncontainerized apps?
 
 Let us start with a popular question - Can an application having Python as a container, run SQL queries on an external Microsoft SQL database and publish the results on an Apache web server container? 
@@ -15,4 +21,4 @@ Although no longer recommended, Docker links can also join multiple containers t
 * Please Note - Docker Inc. states that the functionality of Docker links was incorp
 
 
-[Proceed >> Architecture of Docker Platform](https://github.com/collabnix/dockerlabs/blob/master/beginners/architecture-of-docker.md)
+[Proceed >> Architecture of Docker Platform](http://dockerlabs.collabnix.com/beginners/architecture-of-docker.html)

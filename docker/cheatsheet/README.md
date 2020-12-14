@@ -3,9 +3,7 @@
 
 ## Complete Docker CLI 
 
-
-
-![full](https://github.com/sangam14/dockercheatsheets/blob/master/dockercheatsheet8.png)
+![full](https://raw.githubusercontent.com/sangam14/dockercheatsheets/master/dockercheatsheet8.png)
 
 <br>
 <br>
@@ -15,30 +13,31 @@
 <br>
 
 
-![container_management](https://github.com/sangam14/dockercheatsheets/blob/master/dockercheatsheet1.png)
+![container_management](https://raw.githubusercontent.com/sangam14/dockercheatsheets/master/dockercheatsheet1.png)
 
 ## Inspecting The Container 
 <br>
 
-![Inspecting The Container](https://github.com/sangam14/dockercheatsheets/blob/master/dockercheatsheet3.png)
+![Inspecting The Container](https://raw.githubusercontent.com/sangam14/dockercheatsheets/master/dockercheatsheet3.png)
+
 ## Interacting with Container
-![Interacting with Container1](https://github.com/sangam14/dockercheatsheets/blob/master/dockercheatsheet4.png)
+![Interacting with Container1](https://raw.githubusercontent.com/sangam14/dockercheatsheets/master/dockercheatsheet4.png)
 
 ## Image Management Commands 
 <br>
 
- ![image management commands](https://github.com/sangam14/dockercheatsheets/blob/master/dockercheatsheet5.png)
+ ![image management commands](https://raw.githubusercontent.com/sangam14/dockercheatsheets/master/dockercheatsheet5.png)
  
- ## Image Transfer Comnands 
+## Image Transfer Comnands 
  <br>
  
- ![Image Transfer Comnands](https://github.com/sangam14/dockercheatsheets/blob/master/dockercheatsheet6.png)
+ ![Image Transfer Comnands](https://raw.githubusercontent.com/sangam14/dockercheatsheets/master/dockercheatsheet6.png)
 
 
 ## Builder Main Commands
 <br>
 
-![Builder Main Commands](https://github.com/sangam14/dockercheatsheets/blob/master/dockercheatsheet7.png)
+![Builder Main Commands](https://raw.githubusercontent.com/sangam14/dockercheatsheets/master/dockercheatsheet7.png)
 
 
 
@@ -459,8 +458,57 @@ services:
       - "somehost:192.168.1.100"
 ```
 
+### sevices 
+To view list of all the services runnning in swarm 
+
+```
+docker service ls 
+
+```
+To see all running services 
+
+```
+docker stack services stack_name
+```
+to see all services logs 
+
+```
+docker service logs stack_name service_name 
+```
+To scale services quickly across qualified node 
+```
+docker service scale stack_name_service_name=replicas
+```
+### clean up 
+
+To clean or prune unused (dangling) images
+```
+docker image prune 
+```
+To remove all images which are not in use containers , add - a 
+```
+docker image prune -a 
+```
+To Purne your entire system 
+```
+docker system prune 
+```
+To leave swarm 
+```
+docker swarm leave  
+```
+To remove swarm ( deletes all volume data and database info)
+```
+docker stack rm stack_name  
+```
+To kill all running containers 
+```
+docker kill $(docekr ps -q ) 
+```
+
+
 ## Contributor - 
 
-Sangam biradar - smbiradar14@gmail.com - www.codexplus.in 
+[Sangam biradar](https://twitter.com/BiradarSangam) - Docker Community Leader 
 
 

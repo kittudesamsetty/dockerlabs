@@ -1,10 +1,17 @@
+---
+layout: default
+title: Beginners Track - Difference between Containers and Virtual Machines
+description: collabnix | DockerLab | Docker - Beginners Track
+---
+
+
 # Difference between Containers and Virtual Machines
 
 Let us look at the component view of how virtual machines and containers are implemented.
 
 
 
-![Component View](https://github.com/collabnix/dockerlabs/blob/master/beginners/images/difference-vm-containers.png)
+![Component View](https://raw.githubusercontent.com/collabnix/dockerlabs/master/beginners/images/difference-vm-containers.png)
 
 ## Virtual Machine
 
@@ -16,7 +23,7 @@ Virtual Machines our physical machine is divided into following parts :-
 
 Say, you are using a system having 8GB RAM. If you create 2 VMs each with 4GB RAM, you are basically dividing your server into two components - each with 4GB RAM and would never be able to use that underlying 8GB RAM altogether again. 
 
-![Component View](https://github.com/collabnix/dockerlabs/blob/master/beginners/docker-vs-vm.png)
+![Component View](https://raw.githubusercontent.com/collabnix/dockerlabs/master/beginners/docker-vs-vm.png)
 
 ## Containers
 
@@ -41,4 +48,4 @@ Prime differnce between Containers and Virtual Machine is the virtualization of 
 * https://blog.netapp.com/blogs/containers-vs-vms/
 * https://www.toptal.com/linux/separation-anxiety-isolating-your-system-with-linux-namespaces 
 
-[Proceed >> Difference between VM Networking & Container Networking](https://github.com/collabnix/dockerlabs/blob/master/beginners/difference-vmnetwork-docker-networking.md)
+[Proceed >> Difference between VM Networking & Container Networking](https://collabnix.github.io/dockerlabs/beginners/difference-vmnetwork-docker-networking.html)

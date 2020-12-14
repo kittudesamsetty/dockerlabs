@@ -1,3 +1,20 @@
+---
+layout: default
+title: Beginners Track - template 
+description: collabnix | DockerLab | Docker - Beginners Track
+---
+
+Note: readme.md / dir file name must be like this ` ex:docker_beginner_track `[don't add spaces] 
+
+if your not able to understant how to contribute ? please dm in collabnix slack #issue channel 
+```
+---
+layout: default
+title: Track name 
+description: collabnix | DockerLab | Docker/k8s - track name 
+---
+```
+Note: add above code top of the(in header) readme.md  
 
 # Demonstrating Hello World Example
 
@@ -36,7 +53,9 @@ $ docker run hello-world
 
 ```
 
-![alt text](https://github.com/collabnix/dockerlabs/blob/master/beginners/images/b301_helloworld.png)
+If you want to add some img to readme.md make sure it will be like 'https://raw.githubusercontent.com/collabnix/dockerlabs/master/beginners/images/b301_helloworld.png' raw format. you will get file link from download button.
+
+![alt text](https://raw.githubusercontent.com/collabnix/dockerlabs/master/beginners/images/b301_helloworld.png)
 
 
 
@@ -171,4 +190,4 @@ $ docker inspect 4ab
 Ajeet Singh Raina
 
 
-[Next: Working with Docker Images](https://github.com/collabnix/dockerlabs/blob/master/beginners/b300/b302-workingwithdockerimage.md)
+[Next: Working with Docker Images](https://collabnix.github.io/dockerlabs/beginners/workingwithdockerimage.html)

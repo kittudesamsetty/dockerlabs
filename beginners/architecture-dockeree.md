@@ -1,3 +1,10 @@
+---
+layout: default
+title: Beginners Track -  Architecture of Docker Enteprise Edition 2.0
+description: collabnix | DockerLab | Docker - Beginners Track
+---
+
+
 # Architecture of Docker Enteprise Edition 2.0
 
 ## Introduction to Docker EE 2.0
@@ -8,7 +15,7 @@
 * Docker EE provides an integrated, tested and certified platform for apps running on enterprise Linux or Windows operating systems and Cloud providers. 
 * It is tightly integrated to the underlying infrastructure to provide a native, easy to install experience and an optimized Docker environment.
 
-![alt text](https://github.com/collabnix/dockerlabs/blob/master/beginners/images/b005-arch2.png)
+![alt text](https://raw.githubusercontent.com/collabnix/dockerlabs/master/beginners/images/b005-arch2.png)
 
 Docker EE 2.0 GA consists of 3 major components which together enable a full software supply chain, from image creation, to secure image storage, to secure image deployment.
 
@@ -42,7 +49,7 @@ Yes, Kubernetes in Docker EE fully supports all Docker EE features, including ro
 
 ## Architecture of Docker EE
 
-![alt text](https://github.com/collabnix/dockerlabs/blob/master/beginners/images/b005-arch1.png)
+![alt text](https://raw.githubusercontent.com/collabnix/dockerlabs/master/beginners/images/b005-arch1.png)
 
 At the base of the architecture, we have Docker Enterprise Engine. All the nodes in the cluster runs Docker Enterprise Edition as the base engine. Currently the stable release is 17.06 EE. It is a lightweight and powerful containerization technology combined with a work flow for building and containerizing your applications.
 
@@ -56,7 +63,7 @@ There are 3 orchestrators sitting on top of Docker Enterprise Engine – Docker 
 
 Docker EE provides access to the full API sets of three popular orchestrators:
 
-![alt text](https://github.com/collabnix/dockerlabs/blob/master/beginners/images/b005-arch3.png)
+![alt text](https://raw.githubusercontent.com/collabnix/dockerlabs/master/beginners/images/b005-arch3.png)
 
 * Kubernetes: Full YAML object support
 * SwarmKit: Service-centric, Compose file version 3
@@ -80,4 +87,4 @@ Sitting on the top of the stack, there is GUI which uses Swarm APIs and Kubernet
 Contributor:
 - Ajeet Singh Raina
 
-[Proceed >>  Architecture of Docker Community Edition](https://github.com/collabnix/dockerlabs/blob/master/beginners/arhcitecture-of-docker-ce.md)
+[Proceed >>  Architecture of Docker Community Edition](http://dockerlabs.collabnix.com/beginners/arhcitecture-of-docker-ce.html)
